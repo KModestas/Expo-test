@@ -5,7 +5,7 @@ class HomeScreen extends Component {
   render() {
     return (
       <View>
-        <Text>This is the login screen</Text>
+        <Text>This is the Home screen</Text>
       </View>
     );
   }

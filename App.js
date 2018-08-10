@@ -5,12 +5,15 @@ import { StackNavigator } from 'react-navigation';
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Hello!</Text>
-      </View>
+      <AppNavigator/>
     );
   }
 }
+
+const AppNavigator = StackNavigator({
+  LoginScreen: { screen: LoginScreen },
+  HomeScreen: { screen: HomeScreen }
+});
 
 const styles = StyleSheet.create({
   container: {
